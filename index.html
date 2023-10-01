@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotoğraf Galerisi</title>
+    <style>
+      body {
+        background-color: #041d1a; /* Sayfa arka plan rengini yeşil yap */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column; /* Resimleri dikey olarak sıralamak için */
+      }
+
+      .foto-sira {
+        display: flex;
+        flex-wrap: wrap; /* Resimlerin yan yana sığmasını sağlar */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .foto {
+        max-width: 100%; /* Resimlerin ekran genişliğine sığmasını sağlar */
+        height: auto; /* Oranları korumak için */
+        margin: 10px;
+      }
+
+      .alt-kisim {
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .alt-kisim a {
+        text-decoration: none;
+        margin: 10px;
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+      }
+
+      .alt-kisim a i {
+        margin-right: 10px;
+        font-size: 36px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="foto-sira">
+      <img class="foto" src="1.png" alt="Resim 1" />
+      <img class="foto" src="2.png" alt="Resim 2" />
+      <img class="foto" src="3.png" alt="Resim 3" />
+      <img class="foto" src="4.png" alt="Resim 4" />
+      <img class="foto" src="5.png" alt="Resim 5" />
+      <img class="foto" src="6.png" alt="Resim 6" />
+      <img class="foto" src="7.png" alt="Resim 7" />
+    </div>
+    <div class="alt-kisim">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <h1>LETS DIVE IN!</h1>
+    </div>
+  </body>
+</html>
